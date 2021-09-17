@@ -1,38 +1,119 @@
-.App {
-  text-align: center;
+*
+{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h3,h2
+{
+  color:#333;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p
+{
+  color:rgb(177, 177, 177)
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.title-comp
+{
+  margin-bottom:35px;
+}
+.App
+{
+  margin:3% 5%
+}
+/* Start Header */
+.header
+{
   display: flex;
   flex-direction: column;
+  margin-bottom: 70px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+/* End Header */
+.profile-content
+{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom:50px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.profile-content img
+{
+  width:200px;
+  height:200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom:30px;
+}
+@media(max-width:612px)
+{
+  .profile-content img
+  {
+    order:-1
   }
-  to {
-    transform: rotate(360deg);
+}
+/* Start About */
+.about
+{
+  width:350px;
+  max-width: 100%;
+  margin-bottom: 30px;
+}
+/* End About */
+
+/* Start User */
+.user
+{
+  width:400px;
+  max-width:100%;
+}
+.user span
+{
+  color:gray
+}
+.user-details > div
+{
+  margin-bottom:10px;
+}
+.user-details > div h4
+{
+  margin-bottom:10px;
+}
+/* End User */
+
+/* Start Skills */
+.skills .skills-list li
+{
+  position: relative;
+  width: 400px;
+  height: 20px;
+  background: rgb(210 210 210);
+  color: #FFF;
+  margin-bottom: 10px;
+  text-align: center;
+  z-index: 1;
+}
+.skills .skills-list li span
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index:-1;
+}
+/* End Skills */
+
+
+
+@media(min-width:992px)
+{
+  .profile-content
+  {
+    justify-content: space-between;
+    align-items: center;
+  }
+  .user
+  {
+    width:400px;
+    max-width:100%;
   }
 }
